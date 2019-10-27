@@ -1,42 +1,56 @@
 {
-  "name": "users",
-  "version": "1.0.0",
-  "description": "Starter pack for an auth-included graphql project",
-  "repository": {
-    "type": "git",
-    "url": "github.com/stephengrider"
-  },
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon index.js --ignore client"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "apollo-client": "^0.8.2",
-    "axios": "^0.15.3",
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-env": "^1.1.8",
-    "babel-preset-react": "^6.22.0",
-    "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.16.0",
-    "connect-mongo": "^1.3.2",
-    "express": "^4.14.0",
-    "express-graphql": "^0.6.1",
-    "express-session": "^1.15.0",
-    "graphql": "^0.8.2",
-    "graphql-tag": "^1.2.4",
-    "html-webpack-plugin": "^2.26.0",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.7.8",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "react": "^15.4.2",
-    "react-apollo": "^0.10.0",
-    "react-dom": "^15.4.2",
-    "react-router": "^3.0.2",
-    "webpack": "^2.2.0",
-    "webpack-dev-middleware": "^1.9.0"
-  }
+    "name": "users",
+    "version": "1.0.0",
+    "description": "Starter pack for an auth-included graphql project",
+    "repository": {
+        "type": "git",
+        "url": "github.com/stephengrider"
+    },
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ./src --fix",
+        "format": "prettier --write \"**/*.+(js|jsx|json|html|yml|yaml|css|md|vue)\"",
+        "style": "npm run format && npm run lint",
+        "dev": "nodemon ./src/index.js --ignore ./src/client"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-client": "^0.8.2",
+        "axios": "^0.15.3",
+        "babel-core": "^6.22.1",
+        "babel-loader": "^6.2.10",
+        "babel-preset-env": "^1.1.8",
+        "babel-preset-react": "^6.22.0",
+        "bcrypt-nodejs": "0.0.3",
+        "body-parser": "^1.16.0",
+        "connect-mongo": "^1.3.2",
+        "express": "^4.14.0",
+        "express-graphql": "^0.6.1",
+        "express-session": "^1.15.0",
+        "graphql": "^0.8.2",
+        "graphql-tag": "^1.2.4",
+        "html-webpack-plugin": "^2.26.0",
+        "lodash": "^4.17.4",
+        "mongoose": "^4.7.8",
+        "passport": "^0.3.2",
+        "passport-local": "^1.0.0",
+        "react": "^15.4.2",
+        "react-apollo": "^0.10.0",
+        "react-dom": "^15.4.2",
+        "react-router": "^3.0.2",
+        "webpack": "^2.2.0",
+        "webpack-dev-middleware": "^1.9.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.5.1",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.4.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-react": "^7.16.0",
+        "prettier": "^1.18.2"
+    }
 }
